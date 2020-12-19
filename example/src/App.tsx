@@ -1,20 +1,12 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import AwesomeModule from 'react-native-awesome-module';
+import TestView from 'react-native-awesome-module';
 
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
 
-  React.useEffect(() => {
-    AwesomeModule.multiply(3, 7).then(setResult);
-  }, []);
-
-  return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+  return (<TestView/>
   );
 }
 
